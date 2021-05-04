@@ -1,8 +1,8 @@
 # cat_detector
 
-This is the implementation of a cat detector for a camera triggered alarm that goes off when a cat is nearby, or there ar no birds in the frame of view. The procedure is as follow:
+This is the implementation of a cat detector for a camera triggered alarm that goes off when a cat is nearby, or there are no birds in the frame of view. The procedure is as follow:
 
-1. Using pretrained YOLO5x it creates a pseudo ground truth for a dataset containing images of cats and birds.
+1. Using pretrained YOLO5x it creates a pseudo-ground truth for a dataset containing images of cats and birds.
 2. It trains YOLO5x on the labeled data.
 3. The trained detector is used to detect cats and birds in the image/video and alarms when reqiured.
 
@@ -38,16 +38,15 @@ python detect.py --source "pathtoimages" --weights yolov5x.pt --save-txt --nosav
 
 
 ## 2. Train
-You can download the checkpoint for YOLO5x trained on cat and bird dataset from here (this model in trained for only 16 epochs): https://drive.google.com/drive/u/0/folders/1BgvAXS8-89aFjp_1BitjBk4cWMU9Vyw0
+You can download the checkpoint for YOLO5x trained on cat and bird dataset from here (this model in trained for only 16 epochs): https://drive.google.com/drive/u/0/folders/1BgvAXS8-89aFjp_1BitjBk4cWMU9Vyw0 and putting it in yolo directory.
 
 
-Otherwise train YOLO5x on this dataset using the followin command:
+Otherwise train YOLO5x on this dataset using the following command:
 
 ```shell
 python train.py --img 640 --batch 16 --epochs 10 --data cat-bird.yaml --weights yolov5x.pt  --cache
 ```
 
-The checkpoints and validation results will be saved in runs/train/
 
 
 ## 3. Evaluate 
