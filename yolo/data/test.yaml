@@ -1,0 +1,12 @@
+# test dataset
+
+
+val: data/images/test/  # 3 images
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'bird', 'cat' ]
+
+

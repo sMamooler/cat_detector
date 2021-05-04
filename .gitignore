@@ -4,6 +4,13 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
+#dataset
+yolo/data/images/
+yolo/data/labels/
+yolo/runs
+
+#checkpoitns
+*.pt
 # Other files and folders
 .settings/
 
@@ -12,6 +19,9 @@ bin-release/
 *.air
 *.ipa
 *.apk
+
+#rename notebook
+rename.ipynb
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
