@@ -36,7 +36,6 @@ Otherwise to create the pseudo ground truth for object detection annotations usi
 python detect.py --source "pathtoimages" --weights yolov5x.pt --save-txt --nosave --name "datatype(train/val)"
 ```
 
-This will save the labels in data/labels/"data-type"
 
 ## 2. Train
 You can download the checkpoint for YOLO5x trained on cat and bird dataset from here (this model in trained for only 16 epochs): https://drive.google.com/drive/u/0/folders/1BgvAXS8-89aFjp_1BitjBk4cWMU9Vyw0
