@@ -20,6 +20,7 @@ pip install -r requirements.txt  # install the Python requirements
 You can download the data containing images and labels from here: 
 put the images and labels folders in data directory.
 
+```
 $data
 |-- images
     -- train
@@ -65,5 +66,11 @@ Now the model is ready to be used in the camera tirggered alarm.
 ```shell
 python detect.py --source "pathtoimage" --weights best.pt  --alarm
 ```
+
+![alt text](https://github.com/sMamooler/cat_detector/blob/main/results/bird9289.jpeg)
+
+![alt text](https://github.com/sMamooler/cat_detector/blob/main/results/cat266.jpeg)
+
+![alt text](https://github.com/sMamooler/cat_detector/blob/main/results/no_bird.jpeg)
 
 
