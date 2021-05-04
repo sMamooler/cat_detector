@@ -17,8 +17,7 @@ pip install -r requirements.txt  # install the Python requirements
 # Usage
 
 ## 1. Download (or create) the Pseudo Ground Truth 
-You can download the data containing images and labels from here: 
-put the images and labels folders in data directory.
+You can download the data containing images and labels from here: https://drive.google.com/drive/u/0/folders/1IeVnkjAW72G6wqXDOLA4Vs9B6Q8PgNlz 
 
 ```
 $data
@@ -40,7 +39,7 @@ python detect.py --source "pathtoimages" --weights yolov5x.pt --save-txt --nosav
 This will save the labels in data/labels/"data-type"
 
 ## 2. Train
-You can download the checkpoint for YOLO5x trained on cat and bird dataset from here (this model in trained for only 16 epochs):
+You can download the checkpoint for YOLO5x trained on cat and bird dataset from here (this model in trained for only 16 epochs): https://drive.google.com/drive/u/0/folders/1BgvAXS8-89aFjp_1BitjBk4cWMU9Vyw0
 
 
 Otherwise train YOLO5x on this dataset using the followin command:
